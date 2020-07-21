@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AppOrderFood</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="birthday">Ngày sinh</string>
+    <string name="idcard">Chứng minh nhân dân</string>
+    <string name="agree">Đồng ý</string>
+    <string name="exit">Thoát</string>
+    <string name="register">Đăng ký</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+
+    <dimen name="size10dp">10dp</dimen>
+    <dimen name="size20dp">20dp</dimen>
+    <dimen name="size30dp">30dp</dimen>
+    <dimen name="size40sp">40sp</dimen>
+</resources>
