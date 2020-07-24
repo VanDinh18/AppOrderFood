@@ -32,6 +32,7 @@
 
 
         <EditText
+            android:id="@+id/edTenDangNhapDK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size10dp"
@@ -40,9 +41,11 @@
             android:drawablePadding="@dimen/size10dp"
             android:hint="@string/username"
             android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent" />
 
         <EditText
+            android:id="@+id/edMatKhauDK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size10dp"
@@ -51,25 +54,34 @@
             android:drawablePadding="@dimen/size10dp"
             android:hint="@string/password"
             android:padding="@dimen/size10dp"
-            android:textColorHint="@color/colorAccent" />
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textPassword"/>
 
         <RadioGroup
+            android:id="@+id/rgGioiTinh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/rdNam"
+                android:checked="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/male" />
+                android:text="@string/male"
+                android:textColor="@color/colorAccent"/>
 
             <RadioButton
+                android:id="@+id/rdNu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/female" />
+                android:text="@string/female"
+                android:textColor="@color/colorAccent"/>
         </RadioGroup>
 
         <EditText
+            android:id="@+id/edNgaySinhDK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size10dp"
@@ -78,9 +90,11 @@
             android:drawablePadding="@dimen/size10dp"
             android:hint="@string/birthday"
             android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent" />
 
         <EditText
+            android:id="@+id/edCMNDDK"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size10dp"
@@ -88,7 +102,9 @@
             android:drawableLeft="@android:drawable/ic_menu_day"
             android:drawablePadding="@dimen/size10dp"
             android:hint="@string/idcard"
+            android:maxLength="8"
             android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent"
             android:textColorHint="@color/colorAccent" />
 
         <LinearLayout
@@ -97,6 +113,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnDongYDK"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/size10dp"
@@ -106,6 +123,7 @@
                 android:background="@color/colorButonAgree"/>
 
             <Button
+                android:id="@+id/btnThoatDK"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/size10dp"
