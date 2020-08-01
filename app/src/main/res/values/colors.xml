@@ -5,6 +5,8 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorWhite">#fff</color>
     <color name="colorBackgroundRegister">#6200Ee</color>
+    <color name="colorBackgroundSignin">#6200Ee</color>
     <color name="colorButonAgree">#9d46ff</color>
     <color name="colorButonExit">#9d46ff</color>
+    <color name="colorButonRegister">#9d46ff</color>
 </resources>

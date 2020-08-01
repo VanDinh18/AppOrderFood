@@ -2,6 +2,7 @@ package com.example.apporderfood.DAO;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.apporderfood.DTO.NhanVienDTO;
@@ -14,7 +15,6 @@ public class NhanVienDAO {
     public NhanVienDAO(Context context){
         CreateDatabase createDatabase = new CreateDatabase(context);
         database = createDatabase.open();
-
     }
 
     public long ThemNhanVien(NhanVienDTO nhanVienDTO){
@@ -26,5 +26,27 @@ public class NhanVienDAO {
         contentValues.put(CreateDatabase.TB_NHANVIEN_NGAYSINH, nhanVienDTO.getNGAYSINH());
 
         return database.insert(CreateDatabase.TB_NHANVIEN, null, contentValues);
+    }
+
+    public boolean KiemTraNhanVien(){
+        String sql = "SELECT * FROM " + CreateDatabase.TB_NHANVIEN;
+        Cursor cursor = database.rawQuery(sql, null);
+        if(cursor.getCount() != 0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    public boolean KiemTraDangNhap(String tenDangNhap, String matKhau){
+        String sql = "SELECT * FROM " + CreateDatabase.TB_NHANVIEN + " WHERE " + CreateDatabase.TB_NHANVIEN_TENDN + " = '" + tenDangNhap
+                + "' AND " + CreateDatabase.TB_NHANVIEN_MATKHAU + " = '" + matKhau + "'";
+        Cursor cursor = database.rawQuery(sql, null);
+        if(cursor.getCount() != 0){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }

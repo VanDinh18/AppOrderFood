@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/size30dp"
+        android:layout_marginTop="@dimen/size40dp"
         android:text="@string/register"
         android:textSize="@dimen/size40sp"
         android:textStyle="bold" />
@@ -26,9 +26,8 @@
         android:id="@+id/form_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_register"
-        android:layout_marginTop="@dimen/size30dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
 
 
         <EditText

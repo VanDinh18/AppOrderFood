@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgroundSignin"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/text_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size40dp"
+        android:text="@string/signin"
+        android:textSize="@dimen/size40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/form_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/edTenDangNhapDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@android:drawable/ic_media_next"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/username"
+            android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/edMatKhauDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@android:drawable/ic_menu_agenda"
+            android:drawablePadding="@dimen/size10dp"
+            android:hint="@string/password"
+            android:padding="@dimen/size10dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/btnDongYDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:text="@string/agree"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorButonAgree"/>
+        <Button
+            android:id="@+id/btnDangKyDN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:text="@string/register"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorButonRegister"/>
+    </LinearLayout>
+</RelativeLayout>

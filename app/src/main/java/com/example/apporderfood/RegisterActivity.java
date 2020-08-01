@@ -1,7 +1,6 @@
 package com.example.apporderfood;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import android.os.Bundle;
 import android.util.Log;

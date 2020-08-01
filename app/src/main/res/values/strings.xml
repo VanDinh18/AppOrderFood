@@ -7,15 +7,19 @@
     <string name="agree">Đồng ý</string>
     <string name="exit">Thoát</string>
     <string name="register">Đăng ký</string>
+    <string name="signin">Đăng nhập</string>
     <string name="male">Nam</string>
     <string name="female">Nữ</string>
     <string name="baoloitendangnhap">Vui lòng nhập tên đăng nhập</string>
     <string name="baoloimatkhau">Vui lòng nhập mật khẩu</string>
     <string name="themthanhcong">Thêm thành công!</string>
     <string name="themthatbai">Thêm thất bại!</string>
+    <string name="dangnhapthanhcong">Đăng nhập thành công!</string>
+    <string name="dangnhapthatbai">Đăng nhập thất bại!</string>
 
     <dimen name="size10dp">10dp</dimen>
     <dimen name="size20dp">20dp</dimen>
     <dimen name="size30dp">30dp</dimen>
+    <dimen name="size40dp">40dp</dimen>
     <dimen name="size40sp">40sp</dimen>
 </resources>
